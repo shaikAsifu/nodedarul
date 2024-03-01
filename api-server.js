@@ -1,3 +1,5 @@
+const DEFAULT_SECRET_TOKEN = "default_secret_token";
+require('dotenv').config();
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
@@ -9,16 +11,12 @@ const stripe = require('stripe')(authConfig.stripeSecretkey);
 const axios = require('axios');
 const bodyParser = require('body-parser');
 const { data } = require("autoprefixer");
-require('dotenv').config();
 
 const app = express();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
-
+const actoken = process.env.SECRET_TOKEN || DEFAULT_SECRET_TOKEN;
 const port = process.env.PORT || 3002;
-// const appPort = process.env.SERVER_PORT || 3000;
-//const appOrigin = authConfig.appOrigin || `http://localhost:${appPort}`;
-const actoken = process.env.SECRET_TOKEN || 3002;
 
 if (
   !authConfig.domain ||
