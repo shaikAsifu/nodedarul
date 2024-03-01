@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const port = process.env.PORT || 3002;
 // const appPort = process.env.SERVER_PORT || 3000;
 //const appOrigin = authConfig.appOrigin || `http://localhost:${appPort}`;
-const actoken = process.env.SECRET_TOKEN;
+const actoken = process.env.SECRET_TOKEN ||3002;
 
 if (
   !authConfig.domain ||
