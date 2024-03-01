@@ -1,0 +1,7 @@
+{
+  "domain": "dev-7r7jxjl0zftrqkq8.us.auth0.com",
+  "clientId": "3yynq4gnCLT1fulDmeghNWTY6KhcCoyR",
+  "clientSecret": "CjZGxZ_E5IT33HIQKGvq4zgIAciXh6dxyrYoIIwXztOVA6p6OMts3qjU285T7pRK",
+  "audience": "https://dev-7r7jxjl0zftrqkq8.us.auth0.com/api/v2/",
+  "stripeSecretkey": "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"
+}

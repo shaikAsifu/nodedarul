@@ -1,0 +1,80 @@
+{
+  "name": "dars-e-quraan",
+  "homepage": "https://www.darulkitab.in/",
+  "version": "0.1.0",
+  "main": "api-server.js",
+  "private": true,
+  "scripts": {
+    "start": "npm-run-all --parallel spa api-server",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "spa": "react-scripts start",
+    "server": "node server.js",
+    "server:dev": "nodemon server.js",
+    "api-server": "node api-server.js",
+    "api-server:dev": "nodemon api-server.js",
+    "dev": "npm-run-all --parallel spa api-server:dev",
+    "prod": "npm-run-all --parallel server api-server"
+  },
+  "dependencies": {
+    "@auth0/auth0-react": "^2.2.0",
+    "@babel/core": "^7.23",
+    "@babel/plugin-syntax-flow": "^7.22",
+    "@babel/plugin-transform-react-jsx": "^7.22",
+    "@fortawesome/fontawesome-svg-core": "^1.2",
+    "@fortawesome/free-solid-svg-icons": "^5.8",
+    "@fortawesome/react-fontawesome": "^0.2",
+    "@stripe/react-stripe-js": "^2.4.0",
+    "@stripe/stripe-js": "^2.2.0",
+    "auth0": "^4.1.0",
+    "auth0-js": "^9.23.2",
+    "autoprefixer": "^10.4.17",
+    "axios": "^1.6.7",
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-oauth2-jwt-bearer": "^1.6.0",
+    "helmet": "^4.4",
+    "highlight.js": "^10.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "npm-run-all": "^4.1",
+    "postcss": "^8.4",
+    "react": "^18.2.0",
+    "react-data-table-component": "^7.5.4",
+    "react-dom": "^18.2.0",
+    "react-h5-audio-player": "^3.9.0",
+    "react-router-dom": "^5.3",
+    "react-scripts": "^5.0",
+    "react-table": "^7.8.0",
+    "reactstrap": "^9.2.0",
+    "stripe": "^14.5.0",
+    "typescript": "^4.9"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.17",
+    "@testing-library/react": "^14.0",
+    "jest-environment-jsdom": "^27.0",
+    "jest-fetch-mock": "^3.0",
+    "nodemon": "^2.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
